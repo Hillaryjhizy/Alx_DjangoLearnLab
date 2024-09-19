@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Author(models.Model):
     name = models.CharField(max_length=100)
-    def _str_(self, name):
+    def __str__(self, name):
         return self.name
 
 class Book(models.Model):
